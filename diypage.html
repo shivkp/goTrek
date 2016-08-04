@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href = "myStyles.css" rel = "stylesheet">
+		<title>"Rainy Day"</title>
+	<style>
+		button.accordion {
+			background-color: #00b3b3;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		button.accordion.active, button.accordion:hover {
+			background-color: #006666;
+		}
+
+		div.panel {
+			padding: 0 18px;
+			display: none;
+			background-color: white;
+			font-size: 25px;
+		}
+
+		div.panel.show {
+			display: block !important;
+
+		}
+	</style>
+	</head>
+	
+	<body>
+	<div class="background1">
+		<body background = "rainy.jpg">
+	</div>
+
+		<center><h1><u><font color= #003333 font-size= 20>Rainy Day Activities!</font></u></h1></center>
+
+		<button class="accordion"><center><h2><font color = white>DIYs and Arts & Crafts</font></h2></center></button>
+		<div class="diy">
+		  <p><li>DIY Room Decor: <a href="">https://www.youtube.com/watch?v=h6ad97-6NZk</a></li></p>
+		  <p><li>Play mafia with friends</li></p>
+		  <p><li>White crayon and watercolor: <a href="">https://www.pinterest.com/pin/389913280222060002/</a></li></p>
+		  <p><li>Melted Crayon Art: <a href="">https://www.pinterest.com/pin/389913280222059889/</a></li></p>
+		  <p><li>Tie Dye a shirt</li></p>
+		  <p><li>Make a friendship bracelet</li></p>
+		  <p><li>DIY moonsand: <a href="">https://www.pinterest.com/pin/260223684696639274/</a></li></p>
+		  <p><li>DIY Coffee Cup Candle: <a href="">https://www.pinterest.com/pin/511088257691677469/</a></li></p>
+		  <p><li>DIY Shaving Crean Playdough: <a href="">https://www.pinterest.com/pin/426786502165529103/</a></li></p>
+		  <p><li>Science Experiments: <a href="">https://www.pinterest.com/pin/437552920027594688/</a></li></p>
+		</div>
+
+		<button class="accordion"><center><h2><font color = white>Baking & Food</font></h2></center></button>
+		<div class="baking">
+		<p><li>Bake your favorite dessert</li></p>
+		<p><li>Make popsicles</li></p>
+		<p><li>Make soup: <a href="">http://www.brit.co/easy-quick-soup-recipes/?crlt.pid=camp.aprHBiA25InN</a></li></p>
+		<p><li>Ice Cream Log Roll Cake: <a href="">https://www.pinterest.com/pin/573153490058883197/</a></li></p>
+		<p><li>Homemade Nutella Poptarts: <a href="">https://www.pinterest.com/pin/211598882471048730/</a></li></p>
+		<p><li>Baked Macaroni and Cheese: <a href="">https://www.pinterest.com/pin/195273333821282744/</a></li></p>
+		<p><li>M&Ms Chocolate Chip Skillet Cookie: <a href="">https://www.pinterest.com/pin/ARtnqWCu5LWTSAvT8b9JKMgj3iFc5KE3f9c_W3rOS8S9N203BONCUD4/</a></li></p>
+		<p><li>Pizza Grilled Cheese: <a href="">https://www.pinterest.com/pin/278730664414939843/</a></li></p>
+		<p><li>Healthy Chocolate Chip Cookies: <a href="">https://www.pinterest.com/pin/386324474268255435/ </a></li></p>
+		<p><li>Chocolate Chip Brownie Tarts: <a href="">https://www.pinterest.com/pin/AbnlfzKr2h-IHY85kgzGwSPQnZ9vhUOqF3EuZUd7KW0gDCDZQ3Hr7vo/ </a></li></p>
+		<p><li>Double Chocolate Donuts: <a href="">https://www.pinterest.com/pin/83387030578483596/</a></li></p>
+		<p><li>Mac and Cheese Balls: <a href="">https://www.pinterest.com/pin/483785184951248647/</a></li></p>
+		<p><li>Oven Baked French Fries: <a href="">https://www.pinterest.com/pin/278730664414939843/</a></li></p>
+
+		</div>
+
+		<button class="accordion"><center><h2><font color = white>Other</font></h2></center></button>
+		<div class="other">
+		<p><li>Go through an old photo album</li></p>
+		<p><li>Watch a new TV series on Netflix</li></p>
+		<p><li>Watch an Asian drama on  <a href ="">https://www.viki.com/<a/></li></p>
+		<p><li>Reread your favorite book</li></p>
+		<p><li>Play a board game</li></p>
+		<p><li>Play chess online <a href="">https://lichess.org/</a></li></p>
+		<p><li>Take a nap</li></p>
+		<p><li>Watch a movie you wouldn't normally watch</li></p>
+		<p><li>Build a fort</li></p>
+		<p><li>Learn to code</li></p>
+		<p><li>Play Solitare <a href="">https://www.solitr.com/<a/></</li></p>
+		<p><li>Play cards online <a href="">http://worldofcardgames.com<a/></li></p>
+		</div>
+
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].onclick = function(){
+				this.classList.toggle("active");
+				this.nextElementSibling.classList.toggle("show");
+		  }
+		}
+		</script>
+
+	</body>
+	
+	</body>
+</html>
+	
